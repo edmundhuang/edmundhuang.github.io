@@ -1,5 +1,5 @@
-
 # 运维分享
+
 
 本栏目包含运维相关知识和经验
 
@@ -9,5 +9,6 @@
 - 监测和事件响应记录
 - 环境设置和操作检查清单
 
-* [Windows 域](/operation/domain).
-* [Git](/operation/git).
+* [Windows 域](domain).
+* [Git](git).
+* [Podman](podman)
