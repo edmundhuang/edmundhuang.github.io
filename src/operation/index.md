@@ -1,16 +1,13 @@
 
-# Operation Knowledge
+# 运维分享
 
-This section stores operation-related knowledge.
+本栏目包含运维相关知识和经验
 
-## What to store here
+## 这里要存放什么？
 
-- Deployment and release procedures
-- Monitoring and incident response notes
-- Environment setup and operational checklists
+- 部署和发布过程
+- 监测和事件响应记录
+- 环境设置和操作检查清单
 
-<a class="VPButton brand" href="vitePress/">Vite Press</a>
-
-Start with [Domain Notes](/operation/domain).
-
-Store Git workflows in [Git](/operation/git).
+* [Windows 域](/operation/domain).
+* [Git](/operation/git).

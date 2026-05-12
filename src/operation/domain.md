@@ -1,6 +1,6 @@
-# Operation Domain Notes
+# Windows 域 - 命令和常见问题
 
-This page records common PowerShell commands for maintaining domain user accounts in Active Directory.
+本页面记录了用于维护 Active Directory 中域用户帐户的常用 PowerShell 命令。
 
 ## Preconditions
 
