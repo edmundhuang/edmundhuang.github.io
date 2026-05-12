@@ -1,9 +1,9 @@
 export const operationSidebar = [
   {
-    text: 'Operation Knowledge',
+    text: '运维分享',
     items: [
       { text: 'Overview', link: '/operation/' },
-      { text: 'Domain Notes', link: '/operation/domain' },
+      { text: 'Windows 域', link: '/operation/domain' },
       { text: 'Git', link: '/operation/git' }
     ]
   }

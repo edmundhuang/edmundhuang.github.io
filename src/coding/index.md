@@ -1,6 +1,4 @@
-# Coding Knowledge
-
-This section stores coding-related knowledge.
+# 程序员
 
 ## What to store here
 
