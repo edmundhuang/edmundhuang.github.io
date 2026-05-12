@@ -1,9 +1,9 @@
-# 程序员
+# 编程知识
 
-## What to store here
+## 这里要存放什么？
 
-- Architecture and implementation decisions
-- Reusable code patterns
-- Debugging notes and lessons learned
+- 架构和实施决策
+- 可重用代码模式
+- 调试笔记和经验教训
 
-Start with [Starter Notes](/coding/starter).
+从 [入门笔记](/coding/starter) 开始。

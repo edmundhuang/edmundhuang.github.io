@@ -1,9 +1,9 @@
 export const codingSidebar = [
   {
-    text: 'Coding Knowledge',
+    text: '编程知识',
     items: [
-      { text: 'Overview', link: '/coding/' },
-      { text: 'Starter Notes', link: '/coding/starter' }
+      { text: '概览', link: '/coding/' },
+      { text: '入门笔记', link: '/coding/starter' }
     ]
   }
 ]

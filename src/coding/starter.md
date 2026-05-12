@@ -1,11 +1,15 @@
-# Coding Starter Notes
+# 编程入门笔记
 
-Use this page to capture practical coding knowledge.
+使用此页面记录编程实践经验。
 
-## Suggested template
+## 建议模板
 
-- Context
-- Problem
-- Solution
-- Code snippets
-- Follow-up tasks
+* 背景 - Context
+
+* 问题 - Problem
+
+* 解决方案 - Solution
+
+* 代码片段 - Code snippets
+
+* 后续任务 - Follow-up tasks

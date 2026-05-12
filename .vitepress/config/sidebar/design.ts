@@ -1,9 +1,8 @@
 export const designSidebar = [
   {
-    text: 'Design Knowledge',
+    text: '设计相关',
     items: [
-      { text: 'Overview', link: '/design/' },
-      { text: 'Starter Notes', link: '/design/starter' }
+      { text: '概览', link: '/design/' },
     ]
   }
 ]
