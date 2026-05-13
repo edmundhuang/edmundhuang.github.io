@@ -2,19 +2,12 @@
 
 本页面记录了用于维护 Active Directory 中域用户帐户的常用 PowerShell 命令。
 
-## Preconditions
-
-- Run PowerShell with an account that has permission to manage domain users.
-- Ensure the Active Directory module is available.
-- Prefer using `SamAccountName` or `UserPrincipalName` instead of display name.
-
-## Load the module
-
-```powershell
-Import-Module ActiveDirectory
-```
-
 ## Get user info
+
+User quick look
+```
+net user "jdoe" /domain
+```
 
 Use this to check the current account state before making changes.
 
