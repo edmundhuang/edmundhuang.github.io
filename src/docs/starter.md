@@ -3,7 +3,7 @@
 ## Custom Card 
 
 1. Create the Card Component  
-Create a file at .vitepress/theme/components/CustomCard.vue. This design uses a modern, elevated style with a hover effect and support for images.
+Create a file at .vitepress/theme/components/vcard.vue. This design uses a modern, elevated style with a hover effect and support for images.
 
 ``` html
 <script setup>
@@ -70,13 +70,13 @@ To use this component in any .md file, register it in .vitepress/theme/index.js 
 
 ``` ts
 import DefaultTheme from 'vitepress/theme'
-import CustomCard from './components/CustomCard.vue'
+import vcard from './components/vcard.vue'
 
 export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
     // Register the component globally
-    app.component('CustomCard', CustomCard)
+    app.component('vcard', vcard)
   }
 }
 ```
@@ -85,7 +85,7 @@ export default {
 Now you can drop the card anywhere in your documentation. Make sure to use PascalCase for the component tag to avoid hydration issues.
 
 ``` html
-<CustomCard 
+<vcard 
   title="API Reference" 
   description="Explore our comprehensive API documentation." 
   link="/api/" 
@@ -97,7 +97,7 @@ Now you can drop the card anywhere in your documentation. Make sure to use Pasca
 
 ## Grid Container  
 1. Create the Grid Component  
-Save this as .vitepress/theme/components/CardGrid.vue. It uses a <slot /> so you can nest your CustomCard components inside it in Markdown.
+Save this as .vitepress/theme/components/vgrid.vue. It uses a <slot /> so you can nest your vcard components inside it in Markdown.
 
 
 
@@ -132,14 +132,14 @@ Update your .vitepress/theme/index.js to include the new grid component:
 
 ``` javascript
 import DefaultTheme from 'vitepress/theme'
-import CustomCard from './components/CustomCard.vue'
-import CardGrid from './components/CardGrid.vue'
+import vcard from './components/vcard.vue'
+import vgrid from './components/vgrid.vue'
 
 export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
-    app.component('CustomCard', CustomCard)
-    app.component('CardGrid', CardGrid)
+    app.component('vcard', vcard)
+    app.component('vgrid', vgrid)
   }
 }
 ```
@@ -149,23 +149,23 @@ export default {
 You can now wrap multiple cards in the grid. VitePress will render them side-by-side.
 
 ``` html
-<CardGrid>
-  <CustomCard 
+<vgrid>
+  <vcard 
     title="Getting Started" 
     description="Learn how to install and configure the project." 
     link="/guide/getting-started" 
   />
-  <CustomCard 
+  <vcard 
     title="Components" 
     description="Browse the library of pre-built UI components." 
     link="/guide/components" 
   />
-  <CustomCard 
+  <vcard 
     title="Advanced" 
     description="Deep dive into customization and internals." 
     link="/guide/advanced" 
   />
-</CardGrid>
+</vgrid>
 ```
 
 ## Sample page
