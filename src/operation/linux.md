@@ -1,13 +1,18 @@
 # Linux command 
 
 ## 检查服务器
-1. Look for common service ports  
+1. Check process with filter with filtertext
+```bash
+ps -aux | grep filtertext
+```
+
+2. Look for common service ports  
 ``` bash
 ss -tlnp | grep -E ':(80|443|22|25|3306|5432|27017|6379|8080)'
 netstat -tulpn 2>/dev/null | grep LISTEN
 ```
 
-2. Quick heuristic approach:
+3. Quick heuristic approach:
 
 ``` bash
 # Run this to get a snapshot
