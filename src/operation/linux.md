@@ -6,13 +6,18 @@
 ps -aux | grep filtertext
 ```
 
-2. Look for common service ports  
+2. Print Working Directory（打印工作目录）
+``` bash
+pwd
+```
+
+3. Look for common service ports  
 ``` bash
 ss -tlnp | grep -E ':(80|443|22|25|3306|5432|27017|6379|8080)'
 netstat -tulpn 2>/dev/null | grep LISTEN
 ```
 
-3. Quick heuristic approach:
+4. Quick heuristic approach:
 
 ``` bash
 # Run this to get a snapshot
