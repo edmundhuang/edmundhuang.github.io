@@ -10,6 +10,8 @@
 - 环境设置和操作检查清单
 
 * [Windows 域](domain).
+* [Windows](windows).
 * [Git](git).
 * [Podman](podman)
 * [Linux](linux)
+* [证书](certificate)

@@ -11,6 +11,20 @@
 | podman run [image] | Creates and starts a new container from an image. |
 | Podman stop [container] | Stops one or more running containers. |
 
+## 启动容器示例（挂载卷 + 端口映射）
+
+```bash
+podman run -d --name my-nginx -p 8080:80 -v ./html:/usr/share/nginx/html:Z nginx:alpine
+```
+
+参数说明：
+
+- `-d`：后台运行容器。
+- `--name my-nginx`：指定容器名称。
+- `-p 8080:80`：将宿主机 `8080` 端口映射到容器内 `80` 端口。
+- `-v ./html:/usr/share/nginx/html:Z`：将当前目录下 `html` 挂载到容器内网站目录；`:Z` 适用于启用 SELinux 的环境。
+- `nginx:alpine`：使用的镜像名称和标签。
+
 ## 进入容器并获取交互式 Shell
 ``` bash
 podman exec -it <容器名称或ID> /bin/bash
@@ -47,5 +61,8 @@ root@container-id:/# pwd
 root@container-id:/# exit  # 输入exit退出容器
 
 </details>
+
+
+
 
 

@@ -4,6 +4,7 @@ export const operationSidebar = [
     items: [
       { text: '概览', link: '/operation/' },
       { text: 'Windows 域', link: '/operation/domain' },
+      { text: 'Windows', link: '/operation/windows' },
       { text: 'Git', link: '/operation/git' },
       { text: 'Podman', link: '/operation/podman' },
       { text: 'Linux', link: '/operation/linux' },
