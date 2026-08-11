@@ -1,23 +1,28 @@
 # Linux command 
 
 ## 检查服务器
-1. Check process with filter with filtertext
+1. Linux 版本
+``` sh
+cat /etc/os-release
+```
+
+2. Check process with filter with filtertext
 ```bash
 ps -aux | grep filtertext
 ```
 
-2. Print Working Directory（打印工作目录）
+3. Print Working Directory（打印工作目录）
 ``` bash
 pwd
 ```
 
-3. Look for common service ports  
+4. Look for common service ports  
 ``` bash
 ss -tlnp | grep -E ':(80|443|22|25|3306|5432|27017|6379|8080)'
 netstat -tulpn 2>/dev/null | grep LISTEN
 ```
 
-4. Quick heuristic approach:
+5. Quick heuristic approach:
 
 ``` bash
 # Run this to get a snapshot
