@@ -16,6 +16,9 @@ adb shell pm list packages -3 -f
 # package:/data/app/com.sjm.bts-TNA3At-x9cH3HuLPk6MGQA==/base.apk=com.sjm.bts
 # package:/data/prebuilt_app/PosDemo/PosDemo.apk=test.apidemo.activity
 
+# Uninstall the app for the current user
+adb shell pm uninstall --user 0 <package_name>
+
 # 复制APK到本地
 adb pull /data/app/com.sjm.launcher-PVzBhtXNkM3EpdkaWwufGQ==/base.apk ./
 ```
