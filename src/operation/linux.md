@@ -22,7 +22,18 @@ ss -tlnp | grep -E ':(80|443|22|25|3306|5432|27017|6379|8080)'
 netstat -tulpn 2>/dev/null | grep LISTEN
 ```
 
-5. Quick heuristic approach:
+5. curl
+``` bash
+curl https://btsapi.app.daocloud.sjmresorts.com/api/v1/mobile/employee/info \
+  --request POST \
+  --header 'Accept: */*' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "empCSNStr": "17230074"
+}'
+```
+
+6. Quick heuristic approach:
 
 ``` bash
 # Run this to get a snapshot

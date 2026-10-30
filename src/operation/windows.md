@@ -11,6 +11,13 @@
 - 事件日志快速定位
 
 ## 基础命令
+``` ps
+curl.exe https://btsapi.app.daocloud.sjmresorts.com/api/v1/mobile/employee/info `
+  --request POST `
+  --header "Accept: */*" `
+  --header "Content-Type: application/json" `
+  --data '{\"empCSNStr\": \"16989386\"}'
+``` 
 
 ### 系统信息
 
