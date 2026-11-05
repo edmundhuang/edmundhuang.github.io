@@ -41,6 +41,12 @@ Unlock-ADAccount -Identity username
 ```
 
 ## Reset user password
+change user's password (You know username and old password)
+``` powershell
+Set-ADAccountPassword -Identity "usernmae" `
+  -OldPassword (ConvertTo-SecureString "oldpassword" -AsPlainText -Force) `
+  -NewPassword (ConvertTo-SecureString "newpassword" -AsPlainText -Force)
+```
 
 Reset the password and prompt for the new password securely:
 
