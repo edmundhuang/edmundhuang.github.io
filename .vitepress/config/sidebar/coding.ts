@@ -5,7 +5,8 @@ export const codingSidebar = [
       { text: '概览', link: '/coding/' },
       { text: '入门笔记', link: '/coding/starter' },
       { text: 'Android', link: '/coding/android' },
-      { text: 'Azure DevOps', link: '/coding/devops' }
+      { text: 'Azure DevOps', link: '/coding/devops' },
+      { text: '数据库', link: '/coding/database/' }
     ]
   }
 ]
