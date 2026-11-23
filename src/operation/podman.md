@@ -25,6 +25,16 @@ podman run -d --name my-nginx -p 8080:80 -v ./html:/usr/share/nginx/html:Z nginx
 - `-v ./html:/usr/share/nginx/html:Z`：将当前目录下 `html` 挂载到容器内网站目录；`:Z` 适用于启用 SELinux 的环境。
 - `nginx:alpine`：使用的镜像名称和标签。
 
+## 复制 Podman Volume
+如果因为 rootless 模式或其他原因导致直接 cp 权限不够，可以使用 Podman 自带的 volume export 命令，把整个卷打包成 tar 文件，然后再解压出你需要的文件：
+``` bash
+# 1. 将整个卷导出为 tar 包
+podman volume export redis-probe-data --output redis-probe-data.tar
+
+# 2. 从 tar 包中单独解压出 SQLite 数据库文件
+tar -xf redis-probe-data.tar path/to/your.db
+```
+
 ## 进入容器并获取交互式 Shell
 ``` bash
 podman exec -it <容器名称或ID> /bin/bash
